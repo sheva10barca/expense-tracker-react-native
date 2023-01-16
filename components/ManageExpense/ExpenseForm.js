@@ -19,7 +19,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
       setInputs((curInputs) => {
          return {
             ...curInputs,
-            [inputIdentifier]: { value: enteredValue, isValid: true },
+            [inputIdentifier]: { value: enteredValue.replace(',', '.'), isValid: true },
          };
       });
    }
